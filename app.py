@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, url_for
 from flask_pymongo import PyMongo
-import scraping
+import Scraping
 
 app = Flask(__name__)
 
@@ -22,4 +22,4 @@ def scrape():
    return redirect('/', code=302)
 
 if __name__ == "__main__":
-app.run()
+   app.run()
